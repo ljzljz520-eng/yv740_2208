@@ -68,7 +68,10 @@ func (a *Adapter) SetResolution(width, height int) error {
 		return &NativeError{Operation: "set target resolution", Code: CodeInvalidArgument}
 	}
 
-	_ = a.session.SetResolution(width, height)
+	code := a.session.SetResolution(width, height)
+	if code != CodeOK {
+		return &NativeError{Operation: "set target resolution", Code: code}
+	}
 	return nil
 }
 
