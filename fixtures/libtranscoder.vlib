@@ -1,0 +1,10 @@
+{
+  "name": "fixture-transcoder",
+  "progress": [0, 20, 50, 80, 100],
+  "open_code": 0,
+  "set_resolution_code": 0,
+  "start_code": 0,
+  "cancel_code": 0,
+  "close_session_code": 0,
+  "close_library_code": 0
+}
